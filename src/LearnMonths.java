@@ -4,7 +4,7 @@
 
 public class LearnMonths {
     public static void main(String[] args) {
-        System.out.println("" + args [0]);
+        System.out.println("" + args [1]);
         switch (Integer.parseInt(args[0])) {
             case 1:
                 System.out.println("January");
@@ -40,7 +40,6 @@ public class LearnMonths {
                 break;
             case 12:
                 System.out.println(" December ");
-                break;
             default:
                 System.out.println(" Perfect month ");
         }
