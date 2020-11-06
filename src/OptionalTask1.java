@@ -1,3 +1,8 @@
+/* Ввести n чисел с консоли.
+  Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
+
+ */
+
 import java.util.Scanner;
 
 public class OptionalTask1 {
@@ -7,6 +12,7 @@ public class OptionalTask1 {
         int n = scan.nextInt();
         System.out.println(n);
         int[] arr = new int[n];
+
         for (int i = 0; i < n; i++) {
             System.out.print("Введите " + i + "-ое число: ");
             arr[i] = scan.nextInt();
@@ -16,16 +22,17 @@ public class OptionalTask1 {
     }
 
     public static void solve(int[] arr) {
-        int min = (arr[0] + "").length();
-        int max = 0;
+        String minString = arr[0] + "";
+        int min = minString.length();
         String maxString = "";
-        String minString = "";
+        int max = maxString.length();
+
         for (int valInt : arr) {
             String val = valInt + "";
-            if (val.length() > max) {
+            if (val.length() >= max) {
                 max = val.length();
                 maxString = val;
-            } else if (val.length() < min) {
+            } else if (val.length() <= min) {
                 min = val.length();
                 minString = val;
             }

@@ -1,3 +1,7 @@
+/*
+Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
+ */
+
 public class Main2 {
     public static void main(String[] args) {
 
