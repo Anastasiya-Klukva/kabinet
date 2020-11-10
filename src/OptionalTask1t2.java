@@ -23,7 +23,7 @@ public class OptionalTask1t2 {
         while (!sorted){
             sorted = true;
             for (int i = 0; i < arr.length - 1; i++) {
-                if (arr[i] > arr[i + 1]){
+                if (String.valueOf(arr[i]).length() > String.valueOf(arr[i + 1]).length()){
                     int a = arr[i];
                     arr[i] = arr[i + 1];
                     arr[i + 1] = a;
